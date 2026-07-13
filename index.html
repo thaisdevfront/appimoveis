@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BC Imóveis</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+ 
+</head>
+<body>
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-content">
+
+      <div class="logo">
+        BC
+        <span>BRUNO COLLETTO IMÓVEIS</span>
+      </div>
+
+      <nav>
+        <a href="#">Sobre</a>
+        <a href="#">Buscar Imóveis</a>
+      </nav>
+
+      <a href="#" class="btn-outline">
+        ANUNCIE SEU IMÓVEL
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container hero-content">
+
+      <h1>
+        ENCONTRE O<br>
+        EMPREENDIMENTO IDEAL
+      </h1>
+
+      <p>
+        Atendimento exclusivo e personalizado da BC Imóveis
+      </p>
+
+      <!-- SEARCH -->
+
+      <div class="search-box">
+
+        <div class="search-item">
+          <select id="tipo">
+            <option value="">IMÓVEL</option>
+            <option value="Apartamento">Apartamento</option>
+            <option value="Casa">Casa</option>
+            <option value="Cobertura">Cobertura</option>
+          </select>
+        </div>
+
+        <div class="search-item">
+          <select id="cidade">
+            <option value="">ONDE</option>
+            <option value="Curitiba">Curitiba</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Florianópolis">Florianópolis</option>
+          </select>
+        </div>
+
+        <div class="search-item">
+          <select id="bairro">
+            <option value="">BAIRRO</option>
+            <option value="Batel">Batel</option>
+            <option value="Centro">Centro</option>
+            <option value="Água Verde">Água Verde</option>
+            <option value="Moema">Moema</option>
+            <option value="Jurerê">Jurerê</option>
+          </select>
+        </div>
+
+        <div class="search-item">
+          <select id="valorMin">
+            <option value="">VALOR MIN</option>
+            <option value="300000">300 mil</option>
+            <option value="500000">500 mil</option>
+            <option value="800000">800 mil</option>
+          </select>
+        </div>
+
+        <div class="search-item">
+          <select id="valorMax">
+            <option value="">VALOR MAX</option>
+            <option value="1000000">1 milhão</option>
+            <option value="1500000">1.5 milhão</option>
+            <option value="3000000">3 milhões</option>
+          </select>
+        </div>
+
+        <button class="btn-search">
+          BUSCAR IMÓVEL
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+  <div class="container">
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Lançamentos">
+                <div class="category-title">Lançamentos</div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Prontos">
+                <div class="category-title">Prontos</div>
+            </div>
+        </div>
+    </div>
+  <!-- IMÓVEIS -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Imóveis em<br>
+        Lançamento
+      </h2>
+
+      <div class="cards" id="cardsContainer"></div>
+
+
+
+      <div class="buttons" hidden style="display: none;">
+        <a href="#" class="btn-dark">BUSCAR IMÓVEIS</a>
+        <a href="#" class="btn-link">ANUNCIE SEU IMÓVEL</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- IMÓVEIS LANÇAMENTOS-->
+<!-- <section>
+    <div class="container">
+      <h2 class="section-title">
+        Imóveis em<br>
+        Lançamento
+      </h2>
+      <div class="container-prod" id="sessaoLancamentos"></div>
+
+      <div class="buttons" hidden style="display: none;">
+        <a href="#" class="btn-dark">BUSCAR IMÓVEIS</a>
+        <a href="#" class="btn-link">ANUNCIE SEU IMÓVEL</a>
+      </div>
+    </div>
+
+</section> -->
+
+<!-- VIDEO-->
+  <section class="container video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Apresentação Corporativa"></iframe>
+        </div>
+    </section>
+
+
+<!-- IMÓVEIS DETAQUES-->
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Imóveis<br>
+        em Destaque
+      </h2>
+      <div class="container-prod" id="sessaoDestaque"></div>
+      <!-- <div class="cards" id="cardsContainer"></div> -->
+
+      <div class="buttons" hidden style="display: nones;">
+        <a href="#" class="btn-dark">BUSCAR IMÓVEIS</a>
+        <a href="#" class="btn-link">ANUNCIE SEU IMÓVEL</a>
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- SOBRE -->
+
+<section>
+    <div class="container">
+
+      <h2 class="section-title">
+        Descubra o melhor em imóveis prontos e lançamentos em Curitiba
+      </h2>
+
+     <section class="about-section">
+        <div class="container about-grid">
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Prédio Comercial">
+                <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="Apartamento">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="Sala">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">Descubra o melhor em imóveis prontos e lançamentos em Curitiba</h2>
+                <p>Bem-vindo à Bruno Colleto Imóveis. Somos uma imobiliária boutique com DNA focado em oferecer as melhores soluções imobiliárias de alto padrão, garantindo que você encontre seu novo lar ou o investimento ideal na região.</p>
+                <!-- <button class="btn-dark">Saiba Mais</button> -->
+            </div>
+        </div>
+        <div class="buttons" hidden style="display: nones;">
+        <a href="#" class="btn-dark">BUSCAR IMÓVEIS</a>
+        <a href="#" class="btn-link">ANUNCIE SEU IMÓVEL</a>
+      </div>
+    </section>
+
+    </div>
+        
+    </section>
+
+  
+
+<!-- IMÓVEIS PRONTOS -->
+    <section class="dark-banner-section">
+        <div class="container dark-banner-grid">
+            <div class="dark-banner-text">
+                <h2 class="section-title">Encontre aqui seu imóvel pronto!</h2>
+                <button class="btn-outline">Ver Prontos</button>
+            </div>
+            <div class="dark-cards-slider">
+                <div class="property-card dark-card">
+                    <div class="property-img"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&amp;fit=crop&amp;w=300&amp;q=80"></div>
+                    <div class="property-info">
+                        <h3>Aun Cobertura</h3>
+                    </div>
+                </div>
+                <div class="property-card dark-card">
+                    <div class="property-img"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&amp;fit=crop&amp;w=300&amp;q=80"></div>
+                    <div class="property-info">
+                        <h3>Aun Cobertura</h3>
+                    </div>
+                </div>
+                <div class="property-card dark-card">
+                    <div class="property-img"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;w=300&amp;q=80"></div>
+                    <div class="property-info">
+                        <h3>Aun Cobertura</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anuncie -->
+    <section class="container advertise-section">
+        <div class="advertise-box">
+            <div class="advertise-content">
+                <h2 class="section-title">Anuncie seu imóvel, de maneira fácil e rápida!</h2>
+                <button class="btn-dark">Anunciar Agora</button>
+            </div>
+            <div class="advertise-img-side">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Chaves do imóvel">
+            </div>
+        </div>
+    </section>
+    
+
+<!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <div class="logo" style="color:#000;">
+        BC
+      </div>
+
+      <div class="footer-nav">
+        <a href="#">Sobre</a>
+        <a href="#">Buscar Imóveis</a>
+      </div>
+
+      <a href="#" class="btn-dark">
+        ANUNCIE SEU IMÓVEL
+      </a>
+
+    </div>
+
+  </footer>
+    
+  <!-- JS -->
+
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
