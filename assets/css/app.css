@@ -469,6 +469,7 @@
         .dark-banner-text .btn-outline {
             border-color: #ffffff;
             color: #ffffff;
+           background-color: transparent;
         }
 
         .dark-banner-text .btn-outline:hover {
